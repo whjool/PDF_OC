@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B174F5391F38479B00B14858 /* Reader.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B174F5381F38479B00B14858 /* Reader.pdf */; };
 		B174F53C1F3847A900B14858 /* PdfShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B174F53B1F3847A900B14858 /* PdfShowViewController.m */; };
+		B174F5441F3854BB00B14858 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B174F53F1F3854BB00B14858 /* libWeChatSDK.a */; };
+		B174F5451F3854BB00B14858 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B174F5401F3854BB00B14858 /* README.txt */; };
 		B1D5C53C1F38463B0067E9B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5C53B1F38463B0067E9B8 /* main.m */; };
 		B1D5C53F1F38463B0067E9B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5C53E1F38463B0067E9B8 /* AppDelegate.m */; };
 		B1D5C5421F38463B0067E9B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D5C5411F38463B0067E9B8 /* ViewController.m */; };
@@ -45,6 +47,11 @@
 		B174F53A1F3847A900B14858 /* PdfShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdfShowViewController.h; sourceTree = "<group>"; };
 		B174F53B1F3847A900B14858 /* PdfShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PdfShowViewController.m; sourceTree = "<group>"; };
 		B174F53D1F38488800B14858 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B174F53F1F3854BB00B14858 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		B174F5401F3854BB00B14858 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		B174F5411F3854BB00B14858 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		B174F5421F3854BB00B14858 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		B174F5431F3854BB00B14858 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		B1D5C5371F38463B0067E9B8 /* OnlinepdfDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlinepdfDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D5C53B1F38463B0067E9B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1D5C53D1F38463B0067E9B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B174F5441F3854BB00B14858 /* libWeChatSDK.a in Frameworks */,
 				D62947DA51E31C5C4536618D /* libPods-OnlinepdfDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +106,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B174F53E1F3854BB00B14858 /* OpenSDK1.7.9_NoPay */ = {
+			isa = PBXGroup;
+			children = (
+				B174F53F1F3854BB00B14858 /* libWeChatSDK.a */,
+				B174F5401F3854BB00B14858 /* README.txt */,
+				B174F5411F3854BB00B14858 /* WechatAuthSDK.h */,
+				B174F5421F3854BB00B14858 /* WXApi.h */,
+				B174F5431F3854BB00B14858 /* WXApiObject.h */,
+			);
+			path = OpenSDK1.7.9_NoPay;
+			sourceTree = "<group>";
+		};
 		B1D5C52E1F38463B0067E9B8 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +143,7 @@
 		B1D5C5391F38463B0067E9B8 /* OnlinepdfDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B174F53E1F3854BB00B14858 /* OpenSDK1.7.9_NoPay */,
 				B174F5381F38479B00B14858 /* Reader.pdf */,
 				B1D5C53D1F38463B0067E9B8 /* AppDelegate.h */,
 				B1D5C53E1F38463B0067E9B8 /* AppDelegate.m */,
@@ -288,6 +309,7 @@
 				B174F5391F38479B00B14858 /* Reader.pdf in Resources */,
 				B1D5C5471F38463B0067E9B8 /* Assets.xcassets in Resources */,
 				B1D5C5451F38463B0067E9B8 /* Main.storyboard in Resources */,
+				B174F5451F3854BB00B14858 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +542,10 @@
 				INFOPLIST_FILE = OnlinepdfDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlinepdfDemo/OpenSDK1.7.9_NoPay",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hun.com.OnlinepdfDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -535,6 +561,10 @@
 				INFOPLIST_FILE = OnlinepdfDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OnlinepdfDemo/OpenSDK1.7.9_NoPay",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hun.com.OnlinepdfDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
